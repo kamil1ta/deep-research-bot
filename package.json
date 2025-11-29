@@ -1,0 +1,53 @@
+{
+  "name": "deep-research-bot",
+  "version": "1.0.0",
+  "main": "dist/main.simple.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.simple.js",
+    "dev": "nodemon src/main.simple.ts",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "research",
+    "notion",
+    "automation",
+    "ai",
+    "content"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "description": "Automated research bot that gathers information from various sources and organizes it in Notion",
+  "dependencies": {
+    "@extractus/article-extractor": "^8.0.20",
+    "@notionhq/client": "^5.4.0",
+    "axios": "^1.13.2",
+    "better-sqlite3": "^12.5.0",
+    "cheerio": "^1.1.2",
+    "commander": "^14.0.2",
+    "dotenv": "^17.2.3",
+    "natural": "^8.1.0",
+    "node-cron": "^4.2.1",
+    "openai": "^6.9.1",
+    "rss-parser": "^3.13.0",
+    "winston": "^3.18.3",
+    "youtube-transcript": "^1.2.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.10.1",
+    "@typescript-eslint/eslint-plugin": "^8.48.0",
+    "@typescript-eslint/parser": "^8.48.0",
+    "eslint": "^9.39.1",
+    "jest": "^30.2.0",
+    "nodemon": "^3.1.11",
+    "prettier": "^3.7.2",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
